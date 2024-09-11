@@ -31,5 +31,13 @@ class FilmTest extends TestCase {
         $this->film->ajouterActeur($acteur);
     }
 
-    public function verifieDateFilm_DifferenceDate_
+    #[PHPUnit\Framework\Attributes\Test]
+    public function getAnciennete_DifferenceDate_True() {
+        // Arrange
+        $dateDiff = 23;
+        // Act
+        $resultat = $this->film->getAnicennete();
+        // Assert
+        $this->assertEquals($dateDiff, $resultat);
+    }
 }

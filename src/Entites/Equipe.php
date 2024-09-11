@@ -20,7 +20,7 @@ class Equipe{
     }
 
 
-    public function getNbLikes(): int
+    public function getNombreLikesPhoto(): int
     {
         return $this->nbLikes;
     }
